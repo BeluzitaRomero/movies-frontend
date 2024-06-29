@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  color: white;
+  background-color: #000000;
+  /* para combinar con wrapper y flex para bajar el footer */
+  height: 100%;
+}
+
+.wrapper {
+  /* para combinar con wrapper y flex para bajar el footer */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 2rem;
+}
+nav a:hover {
+  color: var(--bs-info) !important;
+}
+
+.main-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../assets/img/cine.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-registro {
+  font-size: 1.5rem;
+}
+.main-title {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.card {
+  width: 15rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Pagina detalle                               */
+/* -------------------------------------------------------------------------- */
+.main-detail {
+  margin-top: 5rem;
+  /* para combinar con wrapper y flex para bajar el footer */
+  flex: 1;
+}
+
+.card-detail {
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-detail {
+  padding: 0 0 0 5rem;
+}
+
+.card-detail img {
+  width: 20rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    form                                    */
+/* -------------------------------------------------------------------------- */
+.form-card {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #0e2267;
+}
+
+.main-register {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/img/bg/bg-pop-esquina.jpg");
+  background-size: cover;
+  /* background-position: bottom; */
+  height: 80vh;
+}
+
+.main-register h1,
+.main-login h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    modal                                   */
+/* -------------------------------------------------------------------------- */
+/* Estilos para el modal */
+.modal-content {
+  background-color: #f8f9fa; /* Fondo del modal */
+  color: #212529; /* Color del texto */
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6; /* Borde inferior de la cabecera */
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6; /* Borde superior del pie */
+}
+
+.modal-title {
+  color: #212529; /* Color del título */
+}
+
+.modal-body {
+  color: #212529; /* Color del texto del cuerpo */
+}
+
+.btn-close {
+  color: #000; /* Color del botón de cerrar */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    login                                   */
+/* -------------------------------------------------------------------------- */
+.main-login {
+  /* pochoclos y director cut*/
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/bg/flat-lay-cinema-elements-with-copyspace.webp"); */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/img/bg/pop-bottom-comp.webp");
+  background-size: cover;
+  background-position: bottom;
+  background-position-y: 80%;
+  height: 80vh;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+.footer-list-info li {
+  display: inline-block;
+  margin: 2rem;
+}
+
+footer {
+  font-size: 1.2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                media-querie                                */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 992px) {
+  .card-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .text-detail {
+    margin-top: 2rem;
+    padding: 0;
+    max-width: 20rem;
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul {
+    padding: 0;
+  }
+}

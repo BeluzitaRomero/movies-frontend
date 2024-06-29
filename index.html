@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MOVIES</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black bg-gradient">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand text-white logo"
+            href="index.html"
+            data-aos="flip-down"
+            >MOVIES</a
+          >
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white active"
+                  aria-current="page"
+                  href="#tendencias"
+                  >Tendencias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pages/registrarse.html"
+                  >Registrarse</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pages/login.html"
+                  >Iniciar sesion</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pages/administrar.html"
+                  >Administrar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="d-flex flex-column align-items-center container">
+        <h1 class="main-title">Tenes Movies, tenes tu cine en casa</h1>
+        <h2 class="text-center my-5">
+          Todas las peliculas y series que buscas a un click de distancia
+        </h2>
+        <a
+          class="btn btn-primary my-5 mb-5 btn-registro"
+          href="pages/registrarse.html"
+          >Registrarse</a
+        >
+      </div>
+    </main>
+
+    <section class="container d-flex flex-column align-items-center">
+      <h2 class="text-center my-5">Busca peliculas o series por nombre</h2>
+      <form action="" class="form-home">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control border border-primary"
+            placeholder="Nombre de pelicula"
+            aria-label="Nombre de pelicula"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary border border-primary"
+            type="suhmit"
+            id="button-addon2"
+          >
+            Buscar
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <div class="w-75 m-auto my-5">
+      <hr class="border border-primary border-3 opacity-75" />
+    </div>
+
+    <section id="tendencias" class="container my-5">
+      <h2 class="text-center my-5">¿Qué es tendendencia? Enterate aca</h2>
+      <div
+        id="peliculas-container"
+        class="d-flex justify-content-center flex-wrap gap-5"
+      >
+        <!-- Render de cards desde index.js -->
+      </div>
+    </section>
+    <footer
+      class="container-fluid bg-gradient d-flex justify-content-around align-items-center"
+    >
+      <div class="my-3">
+        <p>
+          Informacion proporcionadas por
+          <a
+            class="text-decoration-none text-info"
+            href="https://developer.themoviedb.org/docs/getting-started"
+            target="_blank"
+            >The Movie DB</a
+          >
+        </p>
+      </div>
+      <div class="footer-list-info">
+        <ul>
+          <li>
+            <a class="nav-link" href="index.html">Terminos y condiciones</a>
+          </li>
+          <li><a class="nav-link" href="index.html">FAQ</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
