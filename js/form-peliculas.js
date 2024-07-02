@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // });
   // Cargar directores
   fetch(
-    "http://localhost/backend-CAC/controllers/DirectorController.php?action=list"
+    "http://localhost/backend-cac/controllers/DirectorController.php?action=list"
   )
     .then((response) => response.json())
     .then((data) => {
       const directorSelect = document.getElementById("idDirector");
-      data.directors.forEach((director) => {
+      data.directores.forEach((director) => {
         let option = document.createElement("option");
         option.value = director.idDirector;
         option.text = director.nombreDirector;
